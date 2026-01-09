@@ -10,11 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const cartBtn = document.getElementById('cart-btn');
     const booksGrid = document.querySelector('.books-grid');
 
-    // --- Dynamic Rendering ---
+    // --- Dynamic    // Render books
     const renderBooks = (booksToRender) => {
         if (!booksGrid) return;
-
         booksGrid.innerHTML = '';
+
         booksToRender.forEach(book => {
             const card = document.createElement('div');
             card.className = 'book-card';
@@ -146,35 +146,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Action buttons
     if (authBtn) authBtn.addEventListener('click', () => alert('Funcionalidad de perfil próximamente.'));
     if (cartBtn) cartBtn.addEventListener('click', () => alert('Tu carrito está vacío.'));
-
-    // --- Carousel Logic ---
-    if (isHome) {
-        const track = document.querySelector('.carousel-track');
-        const nextBtn = document.getElementById('carousel-next');
-        const prevBtn = document.getElementById('carousel-prev');
-
-        if (track && nextBtn && prevBtn) {
-            let scrollAmount = 0;
-            const cardWidth = 300; // Expected card width + gap
-
-            nextBtn.addEventListener('click', () => {
-                const maxScroll = track.scrollWidth - track.clientWidth;
-                if (scrollAmount < maxScroll) {
-                    scrollAmount += cardWidth;
-                    if (scrollAmount > maxScroll) scrollAmount = maxScroll;
-                    track.style.transform = `translateX(-${scrollAmount}px)`;
-                }
-            });
-
-            prevBtn.addEventListener('click', () => {
-                if (scrollAmount > 0) {
-                    scrollAmount -= cardWidth;
-                    if (scrollAmount < 0) scrollAmount = 0;
-                    track.style.transform = `translateX(-${scrollAmount}px)`;
-                }
-            });
-        }
-    }
 });
 
 console.log('InkHeart JS loaded successfully.');

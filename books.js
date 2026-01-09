@@ -89,6 +89,39 @@ const books = [
         featured: false,
         cover: "bookCovers/9788410163775.webp",
         description: "Una épica leyenda de dragones, reinas y magia ancestral."
+    },
+    {
+        id: 9,
+        title: "La Bruja de las Estrellas",
+        author: "Leigh Bardugo",
+        price: 32.50,
+        rating: 4.5,
+        category: "fantasia",
+        featured: true,
+        cover: "bookCovers/9788410190764.webp",
+        description: "Magia, destino y poder en una épica aventura."
+    },
+    {
+        id: 10,
+        title: "Reino de Cenizas",
+        author: "Jennifer L. Armentrout",
+        price: 28.90,
+        rating: 5,
+        category: "romance",
+        featured: true,
+        cover: "bookCovers/9788410239241.webp",
+        description: "Amor y guerra en un mundo de fantasía épica."
+    },
+    {
+        id: 11,
+        title: "Corazón de Cristal",
+        author: "Elise Kova",
+        price: 26.95,
+        rating: 4,
+        category: "romance",
+        featured: true,
+        cover: "bookCovers/9788410381100.webp",
+        description: "Una historia de amor mágica y conmovedora."
     }
 ];
 
