@@ -156,11 +156,6 @@ libreria_web/
 - **Cuerpo del texto**: Inter
 - **Títulos decorativos**: Playfair Display
 
-### Responsive Design
-- **Desktop** (> 992px): Sidebar visible, 3-4 libros por fila
-- **Tablet** (768px - 992px): Sidebar arriba, 2-3 libros por fila
-- **Mobile** (< 768px): Diseño vertical, 1-2 libros por fila
-
 ---
 
 **Desarrollado para InkHeart - Tu librería de fantasía y romance** ✨📚
