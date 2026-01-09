@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar - InkHeart</title>
+    <meta name="description" content="Explora nuestro catálogo completo de libros de fantasía y romance en InkHeart.">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="logo-image.png" alt="InkHeart Logo" class="logo-img">
+                <span class="ink">Ink</span><span class="heart">Heart</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Tu librería</a></li>
+                    <li><a href="comprar.html" class="active">Compra On-line</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="action-icons">
+                    <button id="profile-btn" title="Perfil"><i data-lucide="user"></i></button>
+                    <button id="cart-btn" title="Carrito"><i data-lucide="shopping-cart"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="search-section">
+            <div class="container">
+                <div class="search-pill">
+                    <i data-lucide="search" size="20"></i>
+                    <input type="text" placeholder="Buscar libros..." id="search-input">
+                </div>
+            </div>
+        </div>
+
+        <div class="shop-container container">
+            <aside class="sidebar-categories">
+                <div class="sidebar-header">
+                    <h2>Categorías</h2>
+                    <div class="sidebar-decoration"></div>
+                </div>
+                <ul class="category-list">
+                    <li>
+                        <span class="cat-label">1. GÉNERO PRINCIPAL</span>
+                        <i data-lucide="chevron-down"></i>
+                    </li>
+                    <li>
+                        <span class="cat-label">2. SUBGÉNEROS Y AMBIENTACIÓN</span>
+                        <i data-lucide="chevron-down"></i>
+                    </li>
+                    <li>
+                        <span class="cat-label">3. TROPOS Y DINÁMICAS (RELACIÓN)</span>
+                        <i data-lucide="chevron-down"></i>
+                    </li>
+                    <li>
+                        <span class="cat-label">4. TEMÁTICA Y CRIATURAS</span>
+                        <i data-lucide="chevron-down"></i>
+                    </li>
+                    <li>
+                        <span class="cat-label">5. CONTENIDO EXPLÍCITO Y PERSPECTIVA</span>
+                        <i data-lucide="chevron-down"></i>
+                    </li>
+                    <li>
+                        <span class="cat-label">6. FORMATO Y ESTADO DE LA SERIE</span>
+                        <i data-lucide="chevron-down"></i>
+                    </li>
+                </ul>
+            </aside>
+
+            <section class="shop-content">
+                <div class="shop-header">
+                    <h1>Nuestro Catálogo</h1>
+                </div>
+
+                <div class="books-grid">
+                    <!-- Dynamically populated from books.js -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div class="gold-separator"></div>
+    <footer>
+        <div class="container">
+            <div class="footer-column footer-links">
+                <a href="#">Política de privacidad</a>
+                <a href="#">Cookies</a>
+            </div>
+            <div class="footer-column footer-logo">
+                <span class="ink">Ink</span><span class="heart">Heart</span>
+            </div>
+            <div class="footer-column footer-copyright">
+                <span>&copy; InkHeart</span>
+                <div class="social-links">
+                    <a href="#"><i data-lucide="instagram"></i></a>
+                    <a href="#"><i data-lucide="twitter"></i></a>
+                    <a href="#"><i data-lucide="facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="books.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

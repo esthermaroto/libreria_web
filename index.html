@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InkHeart - Librería de Fantasía y Romance</title>
+    <meta name="description"
+        content="Descubre mundos mágicos, héroes inolvidables y amores que trascienden el tiempo en InkHeart.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="logo-image.png" alt="InkHeart Logo" class="logo-img">
+                <span class="ink">Ink</span><span class="heart">Heart</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Tu librería</a></li>
+                    <li><a href="comprar.html">Compra On-line</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="action-icons">
+                    <button id="profile-btn" title="Perfil"><i data-lucide="user"></i></button>
+                    <button id="cart-btn" title="Carrito"><i data-lucide="shopping-cart"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="search-section">
+            <div class="container">
+                <div class="search-pill">
+                    <i data-lucide="search" size="20"></i>
+                    <input type="text" placeholder="¿Qué mundo quieres visitar hoy?">
+                </div>
+            </div>
+        </div>
+
+        <section class="hero">
+            <div class="hero-card">
+                <h1>Bienvenido a InkHeart</h1>
+                <p>El rincón donde la fantasía y el romance cobran vida. Explora mundos mágicos, héroes inolvidables y
+                    amores que trascienden el tiempo. Cada libro es una puerta a aventuras que despertarán tu
+                    imaginación y emociones. Sumérgete en InkHeart y descubre tu próxima historia favorita.</p>
+                <div class="hero-illustration">
+                </div>
+                <div class="hero-divider"></div>
+            </div>
+        </section>
+
+        <section class="featured-books container section-padding">
+            <div class="carousel-header">
+                <div class="carousel-controls">
+                    <button id="carousel-prev" class="carousel-btn" title="Anterior">
+                        <i data-lucide="chevron-left"></i>
+                    </button>
+                    <button id="carousel-next" class="carousel-btn" title="Siguiente">
+                        <i data-lucide="chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-viewport">
+                <div class="books-grid carousel-track">
+                    <!-- Dynamically populated from books.js -->
+                </div>
+            </div>
+        </section>
+
+        <section class="parchment-section">
+            <div class="container">
+                <div class="parchment-content">
+                    <div class="parchment-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48377.869446793596!2d-3.7209415!3d40.4167754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid%2C%20Spain!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                            width="100%" height="100%" style="border:0; border-radius: 12px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <div class="parchment-info">
+                        <h2>Encuéntranos</h2>
+                        <ul>
+                            <li>
+                                <i data-lucide="map-pin"></i>
+                                <div>
+                                    <strong>Sede Central - Madrid Centro</strong><br>
+                                    Calle de la Fantasía, 12<br>
+                                    28001 Madrid, España
+                                </div>
+                            </li>
+                            <li>
+                                <i data-lucide="map-pin"></i>
+                                <div>
+                                    <strong>Sucursal Barcelona</strong><br>
+                                    Passeig de Gràcia, 45<br>
+                                    08007 Barcelona, España
+                                </div>
+                            </li>
+                            <li>
+                                <i data-lucide="map-pin"></i>
+                                <div>
+                                    <strong>Sucursal Valencia</strong><br>
+                                    Calle Colón, 28<br>
+                                    46004 Valencia, España
+                                </div>
+                            </li>
+                            <li>
+                                <i data-lucide="clock"></i>
+                                <div>
+                                    <strong>Horario</strong><br>
+                                    Lunes a Viernes: 10:00 - 20:00<br>
+                                    Sábados: 11:00 - 15:00
+                                </div>
+                            </li>
+                            <li>
+                                <i data-lucide="phone"></i>
+                                <div>
+                                    <strong>Contacto</strong><br>
+                                    +34 912 345 678<br>
+                                    hola@inkheart.com
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="gold-separator"></div>
+    <footer>
+        <div class="container">
+            <div class="footer-column footer-links">
+                <a href="#">Política de privacidad</a>
+                <a href="#">Cookies</a>
+            </div>
+            <div class="footer-column footer-logo">
+                <span class="ink">Ink</span><span class="heart">Heart</span>
+            </div>
+            <div class="footer-column footer-copyright">
+                <span>&copy; InkHeart</span>
+                <div class="social-links">
+                    <a href="#"><i data-lucide="instagram"></i></a>
+                    <a href="#"><i data-lucide="twitter"></i></a>
+                    <a href="#"><i data-lucide="facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="books.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
